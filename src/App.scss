@@ -1,0 +1,297 @@
+body{
+  margin: 0;padding: 0;font-family: sans-serif;
+  }
+  .box{
+      margin: 32px 0px 0px 0px;
+  }
+
+  $border-color: #ccc8c8;
+  $container-width:1024px;
+  $sky-blu-color: #20a8ff;
+  $green-color:#6ccd58;
+  .border {
+    border: 1px solid #ccc8c8;
+}
+  .container{
+    width: $container-width;
+    margin: 0 auto;
+}
+
+.col-md-4 {
+    width: 25%;
+    float: left;
+}
+.col-md-8 {
+    width: 75%;
+    float: left;
+}
+.text-center {
+    text-align: center;
+}
+.col-md-3 {
+    float: left;
+    width: 33.33%;
+}
+.col-md-6 {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.text-right {
+    text-align: right;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+i{
+    font-style: normal;
+}
+.fl{
+    float: left;
+}
+li{list-style-type:none;}
+.box p {
+    margin: 0;
+}
+.clear {
+    clear: both;
+}
+
+  header{
+    padding: 12px 0px;
+    border-bottom: 1px solid $border-color;
+    #message {
+        background-color: $green-color;
+        border-radius: 4px;
+        color: white;
+        padding: 4px 12px;
+        display: inline-block;
+        font-size: 15px;
+        text-align: center;
+        display: none;
+    }
+    .brand-logo{
+        font-size: 26px;
+        color: #565252;
+        margin: 0px 0px 0px 0px;
+        font-weight: normal;
+    }
+    .cart-link a {
+        background-color:  $sky-blu-color;
+        color: white;
+        position: relative;
+        font-size: 13px;
+        padding: 4px 15px;
+        border-radius: 4px;
+        font-style: normal;
+
+        span {
+            position: absolute;
+            background-color: white;
+            color: #191919;
+            right: -7px;
+            top: -7px;
+            padding: 3px 6px;
+            border-radius: 100%;
+            font-size: 10px;
+            box-shadow: 1px 1px 3px 0px #6e6b6b;
+        }
+    }
+  }
+
+  .box {
+    margin: 32px 0px 0px 0px;
+    .card {
+        width: 25%;
+        float: left;
+        .card-border {
+            border: 1px solid $border-color;
+            margin: 5%;
+            position: relative;
+            .dis-panel {
+                background-color:$green-color;
+                display: inherit;
+                color: white;
+                font-size: 12px;
+                position: absolute;
+                top: 34px;
+                padding: 4px 6px;
+            }
+
+            .card-image {
+                position: relative;
+                margin: 10% 15%;
+                text-align: center;
+                img {
+                    width: 120px;
+                }
+            }
+
+        }
+        
+    }
+    .card .card-content {
+        background-color: #e8e8e8;
+        padding: 4px;
+        
+        .card-title {
+            color: #5e5959;
+            font-size: 14px;
+            
+        }
+        .actual-price {
+            font-weight: 600;
+            font-size: 15px;
+            color: #282727;
+        }
+        .cut-price {
+            text-decoration: line-through;
+            text-decoration-color: #ec0c0c;
+            color: #646161;
+        }
+    }
+    .add-bth-cart {
+        color: $sky-blu-color;
+        border: 1px solid $sky-blu-color;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 4px 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+
+  }
+.order-heading {
+    font-size: 22px;
+    color: #848181;
+    font-weight: 500;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 10px;
+    margin-bottom: 21px;
+    i{
+        padding-right: 8px;
+        color: #848181;
+    }
+}
+.tbl-res {
+    max-width: 100%;
+    overflow: auto;
+}
+
+.mr-top {
+    margin-top: 14px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    thead tr {
+        border: 1px solid $border-color;
+        color: gray;
+        border-left: 0;
+        border-right: 0;
+    }
+    tr{
+        .rece-tbl tr {
+            height: 28px;
+        }
+   
+     td {
+        color: gray;
+        font-size: 12px;
+        .item-img {
+            position: relative;
+            img {
+                width: 23px;
+            }
+            .title {
+                font-size: 14px;
+                font-weight: 500;
+                color: gray;
+                display: block;
+                margin-top: 8px;
+            }
+            button {
+                position: absolute;
+                right: 0;
+                top: 4px;
+                border: 0;
+                background-color: transparent;
+                font-size: 22px;
+                color: gray;
+                cursor: pointer;
+            }
+        }
+        .add-remove{
+            .w-6 {
+                padding: 7px 9px;
+            }
+            i {
+                color: #918d8d;
+            }
+        }
+        
+    }
+    td:nth-of-type(1) {
+        width: 300px;
+    }
+    td:nth-of-type(3) {
+        color: gray;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 17px;
+    white-space: nowrap;
+    }
+    th {
+        text-align: left;
+        font-weight: 500;
+        padding: 5px 4px;
+        font-size: 14px;
+    }
+    th:nth-of-type(1) {
+        width: 300px;
+    }
+
+    th:nth-of-type(2) {
+        width: 220px;
+    }
+
+
+  }
+    
+    
+}
+.rece-tbl tr {
+    height: 28px;
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .card{
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px) and (min-width:480px){
+    .card{
+        width: 50%;
+    }
+}
+@media screen and (max-width:920px ) and (min-width:768px){
+    .card{
+        width: 33.33%;
+    }
+}
+  
+ 
+        
