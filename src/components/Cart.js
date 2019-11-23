@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { removeItem,addQuantity,subtractQuantity} from './actions/cartActions'
 import Recipe from './Recipe'
 import TblHeader from './TblHeader'
+import { Link } from 'react-router-dom'
 import img from '../images/item1.jpg'
 class Cart extends Component{
 
@@ -68,7 +69,7 @@ class Cart extends Component{
              )
        return(
             <div className="container">
-                <h1 className="order-heading"><a href="/"><i className="fa fa-angle-left"></i></a>Order Summary</h1>
+                <h1 className="order-heading"><Link to="/"><i className="fa fa-angle-left"></i></Link>Order Summary</h1>
 
                 <TblHeader />
                 <div className="clear"></div>
